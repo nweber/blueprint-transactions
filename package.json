@@ -7,8 +7,9 @@
     "changelist": "github-changes -o apiaryio -r http-compiler --only-pulls --use-commit-body --file CHANGELOG-generated.md",
     "pretest": "coffeelint ./src",
     "test": "scripts/test",
-    "prepublish": "scripts/prepublish",
-    "postinstall": "scripts/prepublish"
+    "compile": "coffee -b -c -o lib/ src/",
+    "prepublish": "npm run compile",
+    "postinstall": "npm run compile"
   },
   "repository": {
     "type": "git",
