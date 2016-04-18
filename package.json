@@ -7,7 +7,7 @@
     "changelist": "github-changes -o apiaryio -r http-compiler --only-pulls --use-commit-body --file CHANGELOG-generated.md",
     "pretest": "coffeelint ./src",
     "test": "scripts/test",
-    "prepublish": "scripts/prepublish"
+    "prepublish": "scripts/prepublish",
     "postinstall": "scripts/prepublish"
   },
   "repository": {
