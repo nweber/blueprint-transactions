@@ -1,6 +1,7 @@
 node_modules
 src-cov
 CHANGELOG-generated.md
+/lib
 cov.html
 *.DS_Store
 /.idea
